@@ -34,17 +34,19 @@ export const HeroVideo = ({ src, poster, preloadBytes = 2000000, className = "ab
   }, [src, preloadBytes]);
 
     return (
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        poster={poster}
-        className={className}
-      >
-        {videoUrl && <source src={videoUrl} type="video/mp4" />}
-        <source src="/metisoriginvideo.mp4" type="video/mp4"/>
-      </video>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster={poster}
+          className={className}
+          >
+          {videoUrl && <source src={videoUrl} type="video/mp4" />}
+          <source src="/metisoriginvideo.mp4" type="video/mp4"/>
+          
+        </video>
+    
     );
 }
 

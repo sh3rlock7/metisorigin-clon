@@ -13,7 +13,7 @@ export const Navbar = () => {
     
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 50) {
+            if (window.scrollY > 2) {
             setScrolled(true);
             } else {
             setScrolled(false);
@@ -28,7 +28,11 @@ export const Navbar = () => {
     return (
     //Mobile Navbar
     <>
-        <div className="flex relative w-full justify-between md:hidden items-center bg-transparent h-20 px-5 lg:mx-8 z-10">
+        <div className=
+                {`fixed top-0 left-0 flex w-full justify-between md:hidden items-center h-20 px-5 lg:mx-8 z-20 transition-colors duration-300
+                    ${scrolled ? 'bg-black' : 'bg-transparent'}    
+                `}
+        >
             <Image
                 src="/weiss.png"
                 alt="Metis Origins Logo"
@@ -71,7 +75,7 @@ export const Navbar = () => {
 
 
         {/* // Desktop navbar */}
-        <nav className="hidden relative lg:flex items-center justify-between px-8 py-6 mx-20 z-10">
+        <nav className={`hidden fixed top-0 left-0 w-full lg:flex items-center justify-between  px-28 py-8  z-20 ${scrolled ? 'bg-black' : 'bg-transparent'} transition-colors duration-300 ease-in-out`}>
         {/* Logo */}
         <Link href="/" className="flex items-center">
             <Image
