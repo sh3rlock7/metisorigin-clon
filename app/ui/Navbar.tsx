@@ -29,7 +29,7 @@ export const Navbar = () => {
     //Mobile Navbar
     <>
         <div className=
-                {`fixed top-0 left-0 flex w-full justify-between md:hidden items-center h-20 px-5 lg:mx-8 z-20 transition-colors duration-300
+                {`fixed top-0 left-0 flex w-full justify-between lg:hidden items-center h-20 px-5 lg:mx-8 z-20 transition-colors duration-300
                     ${scrolled ? 'bg-black' : 'bg-transparent'}    
                 `}
         >

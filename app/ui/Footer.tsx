@@ -1,5 +1,8 @@
+"use client"
 import Link from "next/link"
 import { FaInstagram, FaInstagramSquare, FaLinkedinIn } from "react-icons/fa"
+import { motion } from "motion/react"
+
 
 export const Footer = () => {
   return (
@@ -8,12 +11,26 @@ export const Footer = () => {
             <h1 className="text-2xl lg:text-5xl">Verbinde dich mit uns auf Social Media</h1>
         </div>
         <div className="text-4xl flex items-center justify-center gap-x-5 mt-10">
-            <div className="bg-(--buttonsBg) h-[90px] w-[90px] rounded-xl flex items-center justify-center">
-                <FaInstagram/>
-            </div>
-            <div className="bg-(--buttonsBg) h-[90px] w-[90px] rounded-xl flex items-center justify-center">
-                <FaLinkedinIn />
-            </div>
+            <Link target="_blank" href={'https://www.instagram.com/metisorigins/'}>
+                <motion.div 
+                    whileHover={{background: "white", color:"black"}}
+                    whileTap={{background: "white", color:"black"}}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                    className="bg-(--buttonsBg) h-[90px] w-[90px] rounded-xl flex items-center justify-center"
+                    >
+                    <FaInstagram/>
+                </motion.div>
+            </Link>
+            <Link target="_blank" href={'https://www.linkedin.com/company/metisorigins/'}>
+                <motion.div 
+                    whileHover={{background: "white", color:"black"}}
+                    whileTap={{background: "white", color:"black"}}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                    className="bg-(--buttonsBg) h-[90px] w-[90px] rounded-xl flex items-center justify-center"
+                >
+                        <FaLinkedinIn />
+                </motion.div>
+            </Link>
         </div>
 
         {/* Division line */}

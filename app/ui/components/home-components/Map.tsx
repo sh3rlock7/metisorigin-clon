@@ -40,7 +40,7 @@ const Map = () => {
       }, []);
     
   return (
-        <section className="relative w-full flex justify-center py-16 -top-10.5">
+        <section className="relative w-full flex justify-center py-16 lg:-top-10.5">
           <div className="relative w-[90%] max-w-6xl  rounded-2xl shadow-lg">
             <Image
               src="/map.jpg"

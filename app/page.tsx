@@ -4,6 +4,7 @@ import { HeroVideo } from "./ui/components/home-components/HeroVideo";
 import { Testimonials } from "./ui/components/home-components/Testimonials";
 import MoreAbout from "./ui/components/home-components/MoreAbout";
 import { Services } from "./ui/components/home-components/Services";
+import { Partner } from "./ui/components/home-components/Partner";
 
 export default function Home() {
   return (
@@ -15,6 +16,11 @@ export default function Home() {
           <HeroContent />
         </div>
       </section>
+      {/* Partner section */}
+      <section>
+        <Partner />
+      </section>
+
       {/* Services section */}
       <section>
         <Services />
