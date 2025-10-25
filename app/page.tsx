@@ -1,5 +1,8 @@
+import Globality from "./ui/components/home-components/Globality";
 import { HeroContent } from "./ui/components/home-components/HeroContent";
 import { HeroVideo } from "./ui/components/home-components/HeroVideo";
+import { Testimonials } from "./ui/components/home-components/Testimonials";
+import MoreAbout from "./ui/components/home-components/MoreAbout";
 import { Services } from "./ui/components/home-components/Services";
 
 export default function Home() {
@@ -15,6 +18,20 @@ export default function Home() {
       {/* Services section */}
       <section>
         <Services />
+      </section>
+      {/* unsere globality section */}
+      <section>
+        <Globality />
+      </section>
+      
+      {/* Location and more services */}
+      <section>
+        <MoreAbout />
+      </section>
+
+      {/* Kunden bewertungen */}
+      <section>
+        <Testimonials />
       </section>
     </main>
   );

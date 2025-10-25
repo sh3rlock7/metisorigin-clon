@@ -75,7 +75,7 @@ export const Navbar = () => {
 
 
         {/* // Desktop navbar */}
-        <nav className={`hidden fixed top-0 left-0 w-full lg:flex items-center justify-between  px-28 py-8  z-20 ${scrolled ? 'bg-black' : 'bg-transparent'} transition-colors duration-300 ease-in-out`}>
+        <nav className={`hidden fixed top-0 left-0 w-full lg:flex items-center justify-between  px-28 py-8  z-50 ${scrolled ? 'bg-black' : 'bg-transparent'} transition-colors duration-300 ease-in-out`}>
         {/* Logo */}
         <Link href="/" className="flex items-center">
             <Image
