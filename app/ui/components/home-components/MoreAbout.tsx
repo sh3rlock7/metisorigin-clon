@@ -17,17 +17,19 @@ const MoreAbout = () => {
         Erfahre mehr über uns
       </h1>
       <div className="flex flex-col lg:flex-row sm:px-7 lg:mt-4 items-center justify-between">
+        {/* Map Component */}
         <Map />
-        <div className="flex flex-col items-center justify-center px-5">
+        
+        <div className="flex flex-col items-start justify-start px-5">
           <Image
             src="/bibiliotheck.jpg"
             alt="bibiliotheck"
             width={1200}
             height={0}
-            className="rounded-2xl h-78 md:h-96 lg:h-58 w-[480px] sm:w-[95%] lg:w-[350px] md:mt-8 lg:mt-0"
+            className="rounded-2xl h-78 md:h-96 lg:h-54 w-[480px] sm:w-[95%] lg:w-[350px] lg:mt-0"
           />
           <div className="mx-auto px-4">
-            <p className="text-black text-2xl mt-7 font-black">
+            <p className="text-black mt-5 sm:mt-0 text-2xl py-1 font-black">
               Unser Vorgehen
             </p>
             <p className="text-xl lg:text-[16px] text-gray-500 lg:w-[450px] mt-2">

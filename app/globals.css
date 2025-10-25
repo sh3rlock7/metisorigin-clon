@@ -5,6 +5,7 @@
   --foreground: #171717;
   --icons: #00d47c;
   --buttonsBg: #161616;
+  --drawerBg: #f7f4f0;
 }
 
 @theme inline {

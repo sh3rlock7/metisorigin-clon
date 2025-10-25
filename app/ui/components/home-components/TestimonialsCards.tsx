@@ -35,7 +35,7 @@ export const TestimonialsCards = ({id, comment, url, name, role, avatar}: Testim
                             src={avatar}
                             alt="Kunden"
                             height={0}
-                            width={0}
+                            width={1200}
                             className="w-16 h-16 rounded-full"
                         />
                     </motion.div>

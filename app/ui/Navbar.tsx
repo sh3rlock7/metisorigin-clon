@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { RiCloseFill, RiInstagramFill, RiLinkedinFill,  RiMenuFill } from "react-icons/ri";
 import { motion } from "motion/react"
+import { DrawerMenu } from "./DrawerMenu";
 
 
 export const Navbar = () => {
@@ -42,7 +43,7 @@ export const Navbar = () => {
                 priority
             />
 
-             <div className="w-10 h-10 relative">
+             <div className="w-10 h-10 relative z-50">
             <AnimatePresence >
                 {open ? (
                 <motion.div
@@ -51,10 +52,10 @@ export const Navbar = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.8 }}
                     transition={{ duration: 0.2 }}
-                    className="absolute inset-0 flex items-center justify-center"
+                    className="absolute inset-0 flex items-center justify-center z-50"
                     onClick={() => setOpen(false)}
                 >
-                    <RiCloseFill className="text-3xl" />
+                    <RiCloseFill className="text-3xl text-black" />
                 </motion.div>
                 ) : (
                 <motion.div
@@ -72,6 +73,12 @@ export const Navbar = () => {
             </AnimatePresence>
             </div>
         </div>
+        
+        <AnimatePresence>
+            {open && <DrawerMenu open={open} setOpen={() => setOpen(false)}/>}
+        </AnimatePresence>
+
+        {/* Drawer mobile menu */}
 
 
         {/* // Desktop navbar */}
