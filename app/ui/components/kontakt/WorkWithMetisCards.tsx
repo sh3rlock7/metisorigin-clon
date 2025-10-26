@@ -2,7 +2,7 @@
 export const WorkWithMetisCards = () => {
   return (
     <div>
-        <div className="text-green-700 flex flex-wrap justify-center lg:justify-between mb-10 mt-10 lg:px-24 px-5 gap-y-10 gap-x-10">
+        <div className="text-green-700 flex flex-col lg:flex-row flex-wrap justify-center lg:justify-between mb-10 mt-10 lg:px-24 px-5 gap-y-10 gap-x-10">
           {/* Card 1 */}
           <div className="w-full md:w-[65%] lg:w-[25%]  flex flex-col justify-start text-left md:border-r md:border-gray-500 lg:border-none">
             <h1 className="text-black text-2xl font-black mt-4 px-2 lg:px-0">
@@ -31,7 +31,7 @@ export const WorkWithMetisCards = () => {
           <div className="hidden lg:block w-px bg-gray-300"></div>
 
           {/* Card 3 */}
-          <div className="w-full md:w-[45%] lg:w-[25%] flex flex-col justify-start text-left md:border-r md:border-gray-500 lg:border-none">
+          <div className="w-full md:w-[45%] lg:w-[25%] flex flex-col justify-start text-left sm:border-r sm:border-gray-500 md:border-none">
             <div className="lg:hidden h-px bg-gray-300 w-[75%] mb-2 transition-colors duration-300 group-hover:bg-gray-500" />
             <h1 className="text-black text-2xl font-black mt-4 lg:px-0">
               Karrierechancen

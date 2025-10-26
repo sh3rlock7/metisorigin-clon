@@ -16,7 +16,7 @@ export const ContactCards = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="flex flex-col text-left border-b md:border-b-0 md:border-r border-gray-300 pb-4 md:pb-0 md:pr-6">
+        <div className="flex flex-col text-left border-b md:border-b-0  md:border-r border-gray-300 pb-4 md:pb-0 md:pr-6">
           <h1 className="text-black text-2xl font-black mt-4">Technischer Support</h1>
           <p className="text-lg lg:text-sm text-gray-500 mt-2">
             Bei technischen Problemen oder Fragen zu unseren Dienstleistungen steht Ihnen unser Technischer Support mit kompetenter Hilfe zur Seite.
