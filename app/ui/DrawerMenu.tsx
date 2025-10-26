@@ -35,17 +35,17 @@ export const DrawerMenu = ({open = false, setOpen}: Props) => {
 
     {/* Menú de links */}
     <div className="flex flex-col justify-center gap-y-6 mt-18">
-        <Link href={'/'}>
+        <Link href={'/'} onClick={setOpen}>
             <div className="bg-white text-center shadow-2xl w-[75%] mx-auto p-3">
                 <p className="text-black text-xl">Home</p>       
             </div>
         </Link>
-        <Link href={'/about'} >
+        <Link href={'/ueber-uns'} onClick={setOpen} >
             <div className="bg-white text-center w-[75%] shadow-2xl mx-auto p-3">
                 <p className="text-black text-xl">About</p>       
             </div>
         </Link>
-        <Link href={'/kontakt'}>
+        <Link href={'/kontakt'} onClick={setOpen}>
             <div className="bg-white text-center w-[75%] shadow-2xl mx-auto p-3">
                 <p className="text-black text-xl">Contact</p>       
             </div>

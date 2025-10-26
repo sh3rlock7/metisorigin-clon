@@ -101,29 +101,54 @@ export const Navbar = () => {
             <Link href="/ueber-uns">About</Link>
 
             {/* Botón "Kontakt" */}
-            <Link
-            href="/kontakt"
-            className="ml-2 inline-flex items-center justify-center rounded-full border border-white bg-white text-black px-5 py-2 font-semibold"
+            <motion.div
+                whileHover={{scale:1.1}}
+                whileTap={{scale:1.1}}
+                transition={{duration: 0.5}}
             >
-            Kontakt
-            </Link>
+
+                <Link
+                href="/kontakt"
+                className="ml-2 inline-flex items-center justify-center rounded-full border border-white bg-white text-black px-5 py-2 font-semibold"
+                >
+                Kontakt
+                </Link>
+            </motion.div>
 
             {/* Iconos sociales */}
             <div className="flex items-center gap-x-4 text-xl ml-2">
-            <Link
-                target="_blank"
-                href="https://www.instagram.com/metisorigins/"
-                aria-label="Instagram"
-                >
-                <RiInstagramFill />
-            </Link>
-            <Link
-                target="_blank"
-                href="https://www.linkedin.com/company/metisorigins/"
-                aria-label="LinkedIn"
-                >
-                <RiLinkedinFill />
-            </Link>
+            <motion.div
+                whileHover={{scale:1.1}}
+                whileTap={{scale:1.1}}
+                transition={{duration: 0.5}}
+            >
+                <Link
+                    target="_blank"
+                    href="https://www.instagram.com/metisorigins/"
+                    aria-label="Instagram"
+                    className="bg-gray-800 text-white p-5 rounded-full inline-flex items-center justify-center 
+                                transition-colors duration-300 
+                                hover:bg-white hover:text-black active:bg-white active:text-black"
+                    >
+                    <RiInstagramFill className="text-xl" />
+                </Link>
+            </motion.div>
+            <motion.div
+                  whileHover={{scale:1.1}}
+                whileTap={{scale:1.1}}
+                transition={{duration: 0.5}}
+            >
+                <Link
+                    target="_blank"
+                    href="https://www.linkedin.com/company/metisorigins/"
+                    aria-label="LinkedIn"
+                    className="bg-gray-800 text-white p-5 rounded-full inline-flex items-center justify-center 
+                    transition-colors duration-300 
+                    hover:bg-white hover:text-black active:bg-white active:text-black"
+                    >
+                    <RiLinkedinFill />
+                </Link>
+            </motion.div>
             </div>
         </div>
         </nav>

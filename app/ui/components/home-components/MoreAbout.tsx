@@ -13,7 +13,7 @@ const MoreAbout = () => {
       <p className="text-sm mt-10 text-center text-gray-500 font-medium">
         Das ist unser vorgehen
       </p>
-      <h1 className="text-4xl lg:text-5xl text-center text-black font-medium lg:font-bold">
+      <h1 className="text-4xl lg:text-5xl text-center text-black mb-2 font-medium lg:font-bold">
         Erfahre mehr über uns
       </h1>
       <div className="flex flex-col lg:flex-row sm:px-7 lg:mt-4 items-center justify-between">
@@ -21,13 +21,20 @@ const MoreAbout = () => {
         <Map />
         
         <div className="flex flex-col items-start justify-start px-5">
-          <Image
-            src="/bibiliotheck.jpg"
-            alt="bibiliotheck"
-            width={1200}
-            height={0}
-            className="rounded-2xl h-78 md:h-96 lg:h-62 w-[480px] sm:w-[95%] lg:w-[350px] lg:mt-0"
-          />
+          <motion.div
+            initial={{opacity:0, y:-50}}
+            whileInView={{opacity: 1, y:0}}
+            transition={{duration: 1}}
+            viewport={{once: true}}
+          >
+            <Image
+              src="/bibiliotheck.jpg"
+              alt="bibiliotheck"
+              width={1200}
+              height={0}
+              className="rounded-2xl h-78 md:h-96 lg:h-62 w-[480px] sm:w-[700px] md:ml-5 lg:ml-0  lg:w-[350px] lg:mt-0"
+            />
+          </motion.div>
           <div className="mx-auto px-4">
             <p className="text-black mt-5 sm:mt-0 text-2xl py-1 font-black">
               Unser Vorgehen
