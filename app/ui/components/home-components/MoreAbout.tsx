@@ -26,7 +26,7 @@ const MoreAbout = () => {
             alt="bibiliotheck"
             width={1200}
             height={0}
-            className="rounded-2xl h-78 md:h-96 lg:h-54 w-[480px] sm:w-[95%] lg:w-[350px] lg:mt-0"
+            className="rounded-2xl h-78 md:h-96 lg:h-62 w-[480px] sm:w-[95%] lg:w-[350px] lg:mt-0"
           />
           <div className="mx-auto px-4">
             <p className="text-black mt-5 sm:mt-0 text-2xl py-1 font-black">

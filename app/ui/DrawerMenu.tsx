@@ -18,7 +18,7 @@ export const DrawerMenu = ({open = false, setOpen}: Props) => {
     animate={{opacity:1}}
     exit={{opacity: 0}}
     transition={{duration:0.5}}
-    className={`${open ? "flex" : "hidden"} flex-col text-center absolute z-40 inset-0 h-screen bg-(--drawerBg)`} >
+    className={`${open ? "flex" : "hidden"} flex-col text-center fixed z-50 inset-0 h-screen bg-(--drawerBg)`} >
     
     {/* Icono de cierre a la derecha */}
     <motion.div
@@ -40,7 +40,7 @@ export const DrawerMenu = ({open = false, setOpen}: Props) => {
                 <p className="text-black text-xl">Home</p>       
             </div>
         </Link>
-        <Link href={'/'} >
+        <Link href={'/about'} >
             <div className="bg-white text-center w-[75%] shadow-2xl mx-auto p-3">
                 <p className="text-black text-xl">About</p>       
             </div>

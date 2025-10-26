@@ -56,7 +56,7 @@ export const Footer = () => {
                 <ul className="space-y-2">
                 <li>
                     <Link
-                    href="/impressum"
+                    href="/imprint"
                     className="hover:underline hover:text-gray-300 transition-colors"
                     >
                     Impressum
@@ -64,7 +64,7 @@ export const Footer = () => {
                 </li>
                 <li>
                     <Link
-                    href="/datenschutz"
+                    href="/privacy"
                     className="hover:underline hover:text-gray-300 transition-colors"
                     >
                     Datenschutz
@@ -72,7 +72,7 @@ export const Footer = () => {
                 </li>
                 <li>
                     <Link
-                    href="/agb"
+                    href="/conditions"
                     className="hover:underline hover:text-gray-300 transition-colors"
                     >
                     AGB
